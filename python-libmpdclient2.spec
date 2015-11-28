@@ -22,12 +22,12 @@ Python client library for MPD (Music Player Daemon)
 %setup -q -n py-%{module}
 
 %build
-python ./setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python ./setup.py install \
+%py_install \
 	--optimize 2 \
 	--root=$RPM_BUILD_ROOT
 
