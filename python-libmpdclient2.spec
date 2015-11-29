@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://incise.org/files/dev/py-%{module}-%{version}.tgz
 # Source0-md5:	fd04a669f25827386a29e842a4cbcefe
 URL:		http://incise.org/py-libmpdclient2.html
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
